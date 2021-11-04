@@ -1,0 +1,98 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: #080867;
+    color: white;
+}
+
+header >nav.menu > ul li {
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1rem;
+    padding-inline: 2rem;
+}
+
+ header>nav.menu>ul>li>a {
+     text-decoration: none;
+     color: white;
+     transition-property: color;
+     transition-duration: 1s;
+     transition-delay: 0.4s;
+ }
+
+header>nav.menu>ul>li>a:visited {
+    color: white;
+}
+
+header>nav.menu>ul>li>a:hover {
+    color: chocolate;
+}
+
+header i {
+    visibility: hidden;
+}
+
+.submenu {
+    display: none;
+}
+
+.sous:hover > ul.submenu{
+    display: block;
+    position: absolute;
+    background: rgba(8, 8, 103, 0.66);
+    margin-top: 2rem;
+}
+
+.sous:hover >ul.submenu > li {
+    display: block;
+    margin-right: 2rem;
+
+}
+
+ul.submenu a {
+    display: block;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 660px){
+
+    header > nav.menu >ul li{
+        display: none;
+    }
+
+    header > nav.menu:hover >ul li {
+        display: block;
+    }
+
+    .sous:hover > ul.submenu {
+        background: rgba(0, 0, 0, 0.63);
+        margin-left: 10rem;
+        margin-top: 0;
+    }
+
+    .sous >ul.submenu > li:hover {
+        color: orangered;
+    }
+
+    .fa-bars {
+        visibility: visible;
+        font-size: 3rem;
+        padding: 1rem;
+
+    }
+
+
+}
